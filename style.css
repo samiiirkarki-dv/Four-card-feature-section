@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  max-width: 1100px;
+  margin: -20px auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: hsl(212, 6%, 44%);
+}
+
+.features-header h1 {
+  font-size: 30px;
+  margin-top: -5px;
+  font-weight: 550;
+  color: hsl(234, 12%, 34%);
+}
+
+.features-header p {
+  max-width: 500px;
+  margin: 8px auto 60px;
+  color: hsl(212, 6%, 44%);
+  font-size: 14px;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  align-items: center;
+  margin: 0 25px;
+  gap: 28px;
+}
+
+.card {
+  height: 220px;
+  width: 320px;
+  box-shadow: 0 15px 30px -10px #afa6a6;
+  margin-top: -15px;
+  /* border-top: red; */
+  border-radius: 3px;
+}
+
+.down {
+  margin-top: 35px;
+}
+
+h3 {
+  font-size: 22px;
+  padding-right: 160px;
+  padding-top: 22px;
+  font-weight: 500;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  padding-left: 22px;
+  text-align: left;
+  font-size: 14px;
+  color: hsl(212, 6%, 44%);
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.team-builder h3 {
+  padding-right: 128px;
+}
+.team-builder p {
+  padding-left: 24px;
+}
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.karma h3 {
+  padding-right: 200px;
+}
+.karma p {
+  padding-left: 20px;
+}
+
+.img {
+  position: relative;
+  left: 116px;
+  top: 27px;
+  height: 55px;
+}
+
+@media (max-width: 375px) {
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-header h2 {
+    font-size: 25px;
+  }
+
+  .features-header h1 {
+    font-size: 22px;
+    margin-top: 3px;
+  }
+
+  .features-header p {
+    max-width: 300px;
+  }
+}
