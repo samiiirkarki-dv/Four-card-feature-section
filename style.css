@@ -40,7 +40,7 @@ body {
 
 .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin: 0 25px;
   gap: 28px;
